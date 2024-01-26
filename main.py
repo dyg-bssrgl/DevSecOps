@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 import pandas as pd
 import ast
 from prometheus_flask_exporter import PrometheusMetrics
+from prometheus_client import Counter
 
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)
